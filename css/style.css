@@ -2,186 +2,335 @@ html,
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
-
+img{
+    display:block;
+    max-width: 100%;
+}
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
-
+h1{
+    color: #650300;
+    font-size: 64px;
+    line-height: 96px;
+    font-weight: bolder;
+}
+h2{
+    color: #650300;
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: bolder;
+}
+a{
+    color: #FFFFFF;
+    text-decoration:none; 
+}
 .d-flex {
     display: flex;
 }
-
+.pt-64{
+    padding-top: 64px;
+}
+.pb-80{
+    padding-bottom: 80px;
+}
+.mb-60{
+    margin-bottom: 60px;
+}
 .header {
-    padding: 2.5rem 5.5rem;
     background-color: #AA0601;
     justify-content: space-between;
     align-items: center;
+    padding:30px 88px;
 }
-
-.logo img {
-    display: block;
+.menu li{
+    line-height: 30px;
+    margin-left: 64px;
+    font-size: 20px;   
 }
-
-.pt-64 {
-    padding-top: 64px;
-}
-
-.menu {}
-
-.menu a {
-    font-size: 20px;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-h1 {
-    line-height: 96px;
-    font-size: 64px;
-    color: #650300;
-    font-weight: bold;
-}
-
-h2 {
-    font-size: 48px;
-    line-height: 67px;
-    font-weight: bold;
-    color: #650300;
-}
-
-.menu li {
-    margin-right: 64px;
-}
-
-.menu li:last-child {
-    margin-right: 0px;
-}
-p{
-    font-size: 16px;
-    line-height: 24px;
-}
-.banner {
+.banner{
     background-image: url(../image/banner.png);
     height: 840px;
+    justify-content:center;
+    align-items:center;
 }
-
 .bg-cover {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-.mr-360 {
-    margin-right: 360px;
+.bannerTitle{
+    flex-direction:column;
+    align-items:flex-end;
 }
-.mb-60{
-    margin-bottom: 60px;
-}
-.banner .title {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-}
-
-.banner .title p {
+.bannerTitle p{
+    color: #650300;
     font-size: 36px;
     line-height: 54px;
-    color: #650300;
+}
+.bannerContainer{
+    flex-direction:column;
+    justify-content:center;
+    height: 100%;
+    width:1200px;
 }
 .flow{
+    text-align:center;
     background-color: #AA06010D;
-    text-align: center;
-    padding-right: 360px;
-    padding-left: 360px;
-    padding-bottom: 80px;
-}
-.flow h2{
-    margin-bottom: 64px;
-}
-.flow-content{
-    
+    flex-direction: column;
     align-items: center;
+}  
+.flow-content{
+    align-items: baseline;
+    width:1200px;
 }
-.flow-content img{
-    max-width:100%;
-    margin-bottom: 2.5rem;
+.flow-content li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
 }
 .flow-content h3{
-    align-items: center;
+    color:#650300;
     font-size: 24px;
-    font-weight: bold;
-    color: #650300;
+    font-weight: bolder;
     line-height: 36px;
     margin-bottom: 4px;
 }
-.flow-content ul{
-    align-items: baseline;
+.flow-content p{
+    font-size: 16px;
+    line-height: 24px;
 }
-.flow-content li{
-    width: 25%;
-    padding-right: 1.5rem;
-    align-items: center;
+.flow-content img {
+    margin-bottom: 2.5rem;
 }
 .classic{
     text-align: center;
+    background-color: #FFFFFF;
 }
 .classic ul{
     flex-direction: column;
-    align-items: center;
-}
-.classic ul li{
-    display: flex;
-    margin-bottom: 32px;
     align-items:center;
 }
-.classic .title{
+.classic li{
+    width: 1200px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin:auto 24px;
+    margin-bottom: 32px;
 }
-.classic .title img{
-    display: block;
+.classic li:last-child{
+    margin-bottom: 80px;
 }
-.classic ul li h3{
+
+.title{
+    margin-right: 14px;
+    margin-left: 24px;
+    display: flex;
+    align-items:center;
+    color: #AA0601;
     font-size: 48px;
     line-height: 72px;
     font-weight: bold;
-    color:#AA0601;
 }
-.co-branded{
-    background-image: url(../image/bg.png);
-    text-align: center;
-}
-.co-branded h2{
-    color: #FFFFFF;
-}
-.co-branded ul{
-    flex-direction: column;
-    align-items: center;
-}
-.rightPicture{
-        flex-direction: column;
-}
-.more{
-    height: 167px;
-    background-image: url(../image/more.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    justify-content: flex-end;
-}
-.moreContain{
-    flex-direction:row;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    width: 315px;
-}
-.more p{ 
-    font-size: 72px;
-    line-height: 108px;
-    color:#AA0601;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
